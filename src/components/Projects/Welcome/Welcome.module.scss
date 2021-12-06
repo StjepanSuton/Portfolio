@@ -1,5 +1,5 @@
+@import "../../../scss/varibales";
 .panel {
-  background-color: rgb(245, 218, 190);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,14 +10,14 @@
   position: absolute;
   min-width: 90%;
   height: 75%;
-  background-color: brown;
+  background-color: $bg-secondary;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 .title {
-  color: rgb(245, 218, 190);
+  color: $font-secondary;
   z-index: 0;
   margin-right: 65vw;
   margin-bottom: 25vw;
@@ -28,7 +28,7 @@
   top: 40vh;
   z-index: 1;
   position: absolute;
-  background-color: brown;
+  background-color: $bg-secondary;
   width: 100vw;
   height: 30vh;
   right: 60vw;

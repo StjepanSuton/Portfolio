@@ -1,9 +1,10 @@
+@import "../../../scss/varibales";
+
 .extended-background {
   padding-top: 25vh;
   width: 100vw;
   height: 140vh;
   display: flex;
-  background-color: rgb(245, 218, 190);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,6 @@
   width: 100vw;
   height: 80vh;
   display: flex;
-  background-color: rgb(245, 218, 190);
   justify-content: space-around;
   justify-content: center;
   flex-direction: column;
@@ -24,15 +24,7 @@
   left: 0;
   width: 90vw;
   height: 15vh;
-  background-color: brown;
-}
-.h2 {
-  margin: 5vw;
-  position: relative;
-  z-index: 1;
-  color: black;
-  font-size: 6vw;
-  align-self: flex-start;
+  background-color: $bg-secondary;
 }
 .small-container {
   width: 90%;
@@ -48,10 +40,10 @@
   position: absolute;
   width: 70vw;
   height: 65vh;
-  background-color: brown;
+  background-color: $bg-secondary;
 }
 .p {
-  color: rgb(245, 218, 190);
+  color: $font-secondary;
   z-index: 1;
   margin-right: 10vw;
   font-size: 2vw;

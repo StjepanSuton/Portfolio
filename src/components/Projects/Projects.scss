@@ -1,3 +1,4 @@
+@import "../../scss/varibales";
 .container {
   z-index: 1;
   overflow-x: hidden;
@@ -6,50 +7,4 @@
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
-}
-
-.panel1-inner {
-  max-width: 90%;
-  height: 75%;
-  background-color: brown;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.slika {
-  margin-left: 45vw;
-}
-.panel2 {
-  background-color: rgb(245, 218, 190);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.panel1-inner {
-  width: 100%;
-  height: 75%;
-  background-color: brown;
-}
-.panel3 {
-  background-color: rgb(245, 218, 190);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.panel4 {
-  background-color: rgb(245, 218, 190);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.panel5 {
-  background-color: rgb(245, 218, 190);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

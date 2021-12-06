@@ -1,14 +1,14 @@
+@import "../../../scss/varibales";
+
 .intro-background {
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: rgb(245, 218, 190);
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   font-size: 7vw;
   overflow: hidden;
-
 }
 
 .letter1 {
@@ -22,7 +22,7 @@
   z-index: 1;
   width: 90vw;
   height: 40vh;
-  background-color: rgb(245, 218, 190);
+  background-color: $bg-primary;
   border-top: solid 3px;
 }
 .letter2 {
@@ -38,7 +38,7 @@
   z-index: 3;
   width: 90%;
   height: 20vw;
-  background-color: rgb(245, 218, 190);
+  background-color: $bg-primary;
   border-top: solid 3px;
 }
 .scroll {

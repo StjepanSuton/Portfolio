@@ -1,6 +1,7 @@
-body {
-  background-color: rgb(245, 218, 190);
+@import "../src/scss/varibales";
 
+body {
+  background-color: $bg-primary;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   padding: 0;

@@ -34,7 +34,7 @@ function AboutMeIntro() {
 
         <div className={classes.line}></div>
         <motion.div
-          animate={{ y: inView ? 0 : -300, opacity: inView ? 1 : 0 }}
+          animate={{ y: inView ? 0 : -200, opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
           className={classes.arrow}
         >
