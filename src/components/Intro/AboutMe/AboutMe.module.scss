@@ -1,5 +1,5 @@
 @import "../../../scss/varibales";
-
+@import "../../../scss/brakepoints";
 .extended-background {
   padding-top: 25vh;
   width: 100vw;
@@ -8,6 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media("<=tablet") {
+    height: 100vh;
+    padding-top: 0;
+  }
 }
 .intro-background {
   width: 100vw;
@@ -41,6 +45,9 @@
   width: 70vw;
   height: 65vh;
   background-color: $bg-secondary;
+  @include media("<=tablet") {
+    height: 50vh;
+  }
 }
 .p {
   color: $font-secondary;
@@ -48,7 +55,19 @@
   margin-right: 10vw;
   font-size: 2vw;
   max-width: 50vw;
+  @include media("<=tablet") {
+    font-size: 2vh;
+  }
+  @include media("<=phone") {
+    font-size: 1.7vh;
+  }
 }
 .img {
   width: 25vw;
+  @include media("<=tablet") {
+    width: 25vh;
+  }
+  @include media("<=phone") {
+    width: 15vh;
+  }
 }

@@ -1,5 +1,5 @@
 @import "../../scss/varibales";
-
+@import "../../scss/brakepoints";
 .loading {
   width: 100vw;
   height: 100vh;
@@ -11,7 +11,6 @@
   justify-content: space-around;
   stroke: $font-primary;
   fill: transparent;
-  stroke-width: 4;
 }
 
 .svg {
@@ -19,4 +18,12 @@
   stroke-width: 3;
   width: 500px;
   height: 500px;
+  @include media("<=tablet") {
+    width: 300px;
+    height: 300px;
+  }
+  @include media("<=phone") {
+    width: 100px;
+    height: 100px;
+  }
 }

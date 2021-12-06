@@ -1,5 +1,5 @@
 @import "../../../scss/varibales";
-
+@import "../../../scss/brakepoints";
 .intro-background {
   width: 100vw;
   height: 100vh;
@@ -14,6 +14,12 @@
 .letter1 {
   margin: 0;
   z-index: 0;
+  @include media("<=tablet") {
+    margin-top: 7rem;
+  }
+  @include media("<=phone") {
+    margin-top: 11rem;
+  }
 }
 .line1 {
   position: absolute;
@@ -26,9 +32,16 @@
   border-top: solid 3px;
 }
 .letter2 {
+  z-index: 0;
   top: 10rem;
   position: absolute;
   z-index: 2;
+  @include media("<=tablet") {
+    margin-top: 16rem;
+  }
+  @include media("<=phone") {
+    margin-top: 20rem;
+  }
 }
 .line2 {
   position: absolute;
@@ -40,9 +53,15 @@
   height: 20vw;
   background-color: $bg-primary;
   border-top: solid 3px;
+  @include media("<=phone") {
+  }
 }
 .scroll {
   z-index: 5;
   position: relative;
   font-size: 1.5vw;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  background-color: $bg-primary;
 }
