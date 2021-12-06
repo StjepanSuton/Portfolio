@@ -43,13 +43,13 @@ function Konobarco() {
           >
             <motion.h6 className={classes.about}>About KONOBAR.CO</motion.h6>
             <motion.p className={classes.p}>
-              KONOBAR.CO was my first ever project that i build from scratch.
-              The idea is to simply scan the Qr kod with your mobile device.
+              KONOBAR.CO was my first ever project that I build from scratch.
+              The idea is to simply scan the Qr code with your mobile device.
               Select the drinks you would like to order and wait for the waiter
               to confirm your order. You can even login with your facebook or
-              google account to keep track of your commonly orderd drinks and
-              collect loyalty rewards which you can redem later. You can try the
-              demo at{" "}
+              google account to keep track of your commonly ordered drinks and
+              collect loyalty rewards which you can redeem later. You can try
+              the demo at:{" "}
               <a
                 className={classes.a}
                 rel="noopener noreferrer"
