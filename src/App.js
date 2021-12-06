@@ -2,7 +2,7 @@ import Home from "./components/Home";
 import React, { useState, useEffect } from "react";
 import Projects from "./components/Projects/Projects";
 import Loading from "./components/Loading/Loading";
-import Madeby from "./components/Madeby/Madeby";
+import ContactMe from "./components/ContactMe/ContactMe";
 function App() {
   //Dva preloadera jer ima problem sa SmoothScrollom i gsapom
   const [preloader1, setPreloader1] = useState(true);
@@ -27,7 +27,7 @@ function App() {
           <Projects />
         </div>
       )}
-      {preloader2 ? "" : <Madeby />}
+      {preloader2 ? "" : <ContactMe />}
     </div>
   );
 }

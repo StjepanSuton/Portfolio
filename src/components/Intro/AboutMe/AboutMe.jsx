@@ -12,7 +12,7 @@ function AboutMe() {
   const { ref, inView } = useInView({
     delay: 10,
     initialInView: false,
-    threshold: 0.15,
+    threshold: 0.35,
     triggerOnce: use,
   });
 

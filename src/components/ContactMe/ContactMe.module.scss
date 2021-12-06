@@ -1,0 +1,49 @@
+.extended-background {
+  width: 100vw;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-contact {
+  height: 45%;
+  width: 60%;
+  background-color: brown;
+  color: rgb(245, 218, 190);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+.p {
+  width: 80%;
+  height: 80%;
+}
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+.img {
+  width: 8vw;
+  margin: 2vw;
+}
