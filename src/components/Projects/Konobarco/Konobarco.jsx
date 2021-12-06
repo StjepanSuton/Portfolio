@@ -49,7 +49,15 @@ function Konobarco() {
               to confirm your order. You can even login with your facebook or
               google account to keep track of your commonly orderd drinks and
               collect loyalty rewards which you can redem later. You can try the
-              demo at sfjndfkdsnfčsn.com
+              demo at{" "}
+              <a
+                className={classes.a}
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://konobar-co.web.app/"
+              >
+                https://konobar-co.web.app/
+              </a>
             </motion.p>
           </motion.div>
           <motion.div className={classes["small-container"]}>

@@ -50,8 +50,15 @@ function SpaceTourism() {
               first project I did on FRONTEND MENTOR it was defenetly the most
               memorable becuase insted of a picture you recived a design in
               Figma, and this task made me feel like a real front-end developer.
-              Want to see how the page looks in your browser you click the link
-              dawdanwdadakwmd.com
+              Want to see how the page looks in your browser you click the link{" "}
+              <a
+                className={classes.a}
+                rel="noopener noreferrer"
+                href="https://spacetravel-frontendmentor.netlify.app/"
+                target="_blank"
+              >
+                https://spacetravel-frontendmentor.netlify.app/
+              </a>
             </motion.p>
           </motion.div>
           <motion.div className={classes["small-container"]}>

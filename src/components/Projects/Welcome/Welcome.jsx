@@ -10,7 +10,7 @@ function Welcome() {
   //once true zato stavljen timeout od jedne sekunde kada se stranica učita
   const { ref, inView } = useInView({
     initialInView: false,
-    threshold: 0.5,
+    threshold: 0.35,
     triggerOnce: use,
   });
 

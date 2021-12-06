@@ -22,18 +22,27 @@
   align-items: center;
 }
 .about-contact {
-  height: 45%;
-  width: 60%;
+  margin-left: 50vw;
+  height: 60%;
+  width: 80%;
   background-color: brown;
-  color: rgb(245, 218, 190);
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2vw;
 }
 .p {
-  width: 80%;
-  height: 80%;
+  margin-right: 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(245, 218, 190);
+  font-size: 2vw;
+  height: 100%;
+  width: 70%;
 }
 .social-container {
   display: flex;
