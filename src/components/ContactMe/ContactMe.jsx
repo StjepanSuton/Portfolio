@@ -93,7 +93,7 @@ function ContactMe() {
             </motion.div>
           </div>
           <motion.div
-            animate={{ x: inView ? 0 : 1400 }}
+            animate={{ x: inView ? 0 : -1400 }}
             transition={{ duration: 1.5 }}
             className={classes["about-contact"]}
           ></motion.div>

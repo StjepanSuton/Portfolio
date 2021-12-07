@@ -6,6 +6,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Welcome from "./components/Projects/Welcome/Welcome";
 import Konobarco from "./components/Projects/Konobarco/Konobarco";
 import SpaceTourism from "./components/Projects/SpaceTourism/SpaceTourism";
+import GetInTouch from "./components/Projects/GetInTouch/GetInTouch";
+import ContactMe from "./components/ContactMe/ContactMe";
 function App() {
   const matches = useMediaQuery("(max-width:1024px)");
   //Dva preloadera jer ima problem sa SmoothScrollom i gsapom
@@ -33,9 +35,14 @@ function App() {
               <Welcome />
               <Konobarco />
               <SpaceTourism />
+              <GetInTouch />
+              <ContactMe />
             </div>
           ) : (
-            <Projects />
+            <div>
+              <Projects />
+              <ContactMe />
+            </div>
           )}
         </div>
       )}

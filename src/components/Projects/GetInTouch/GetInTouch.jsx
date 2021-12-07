@@ -3,9 +3,10 @@ import classes from "./GetInTouch.module.scss";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function GetInTouch() {
   const [use, setUse] = useState(false);
-
+  const matches = useMediaQuery("(min-width:450px)");
   //Retrigera se 4 puta samo od sebe pa mi se animacija neće dogodit ako stavi triger
   //once true zato stavljen timeout od jedne sekunde kada se stranica učita
   const { ref, inView } = useInView({
@@ -24,7 +25,7 @@ function GetInTouch() {
     <div ref={ref} className={classes.panel}>
       <div className={classes["panel-inner"]}>
         <motion.h1
-          animate={{ y: inView ? -20 : 200, opacity: inView ? 1 : 0 }}
+          animate={{ y: inView ? -20 : 100, opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
           className={classes.title}
         >
@@ -32,12 +33,12 @@ function GetInTouch() {
         </motion.h1>
         <div className={classes.line}></div>
         <motion.div
-          animate={{ y: inView ? 0 : -200, opacity: inView ? 1 : 0 }}
+          animate={{ y: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
           className={classes.arrow}
         >
           <ArrowDownwardIcon
-            sx={{ fontSize: 150, color: "rgb(245, 218, 190)" }}
+            sx={{ fontSize: matches ? 150 : 100, color: "rgb(245, 218, 190)" }}
           />
         </motion.div>
       </div>
