@@ -156,12 +156,22 @@ function SpaceTourism() {
             className={classes.learnmore}
           >
             Click to learn more
-            <motion.div
-              animate={{ x: 120, opacity: [0, 1, 0] }}
-              transition={{ repeat: Infinity, duration: 3 }}
-            >
-              <ArrowForwardIcon sx={{ fontSize: 30 }} />
-            </motion.div>
+            {matches === true ? (
+              <motion.div
+                style={{ alignSelf: "center" }}
+                animate={{ y: [0, 50], opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 3 }}
+              >
+                <ArrowDownwardIcon sx={{ fontSize: 15 }} />
+              </motion.div>
+            ) : (
+              <motion.div
+                animate={{ x: 120, opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 3 }}
+              >
+                <ArrowForwardIcon sx={{ fontSize: 30 }} />
+              </motion.div>
+            )}
           </motion.h6>
           <motion.img
             onClick={() => handleShowMore()}

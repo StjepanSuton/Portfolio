@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./AboutMeIntro.module.scss";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { motion } from "framer-motion";
@@ -7,7 +7,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 function AboutMeIntro() {
   const [use, setUse] = useState(false);
   const matches = useMediaQuery("(min-width:450px)");
-  const ref1 = useRef(null);
   //Retrigera se 4 puta samo od sebe pa mi se animacija neće dogodit ako stavi triger
   //once true zato stavljen timeout od jedne sekunde kada se stranica učita
   const { ref, inView } = useInView({

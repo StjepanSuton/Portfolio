@@ -2,7 +2,6 @@ import Home from "./components/Home";
 import React, { useState, useEffect } from "react";
 import Projects from "./components/Projects/Projects";
 import Loading from "./components/Loading/Loading";
-import ContactMe from "./components/ContactMe/ContactMe";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Welcome from "./components/Projects/Welcome/Welcome";
 import Konobarco from "./components/Projects/Konobarco/Konobarco";
