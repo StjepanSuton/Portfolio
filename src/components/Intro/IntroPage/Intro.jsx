@@ -10,32 +10,36 @@ function Intro() {
       initial={{ opacity: 0 }}
       className={classes["intro-background"]}
     >
-      <motion.h1
-        animate={{ y: 0, opacity: 1 }}
-        initial={{ y: 200, opacity: 0 }}
-        transition={{ duration: 1 }}
-        style={{ translateY: y }}
-        className={classes.letter1}
-      >
-        STJEPAN'S
-      </motion.h1>
-      <div className={classes.line1}></div>
-
-      <motion.h1
-        animate={{ y: 0, opacity: 1 }}
-        initial={{ y: 200, opacity: 0 }}
-        transition={{ duration: 1 }}
-        style={{ translateY: y }}
-        className={classes.letter2}
-      >
-        PORTFOLIO
-      </motion.h1>
-      <div className={classes.line2}></div>
-      <motion.h6 style={{ opacity: opacity }} className={classes.scroll}>
-        scroll to begin
-      </motion.h6>
+      <div className={classes["small-container"]}>
+        <motion.h1
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 180, opacity: 0 }}
+          transition={{ duration: 1 }}
+          style={{ translateY: y }}
+          className={classes.letter1}
+        >
+          STJEPAN'S
+        </motion.h1>
+        <div className={classes.line1}></div>
+      </div>
+      <div className={classes["small-container"]}>
+        <motion.h1
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 180, opacity: 0 }}
+          transition={{ duration: 1 }}
+          style={{ translateY: y }}
+          className={classes.letter2}
+        >
+          PORTFOLIO
+        </motion.h1>
+        <div className={classes.line2}></div>
+        <motion.h6 style={{ opacity: opacity }} className={classes.scroll}>
+          scroll to begin
+        </motion.h6>
+      </div>
     </motion.div>
   );
 }
 
 export default Intro;
+/*    */

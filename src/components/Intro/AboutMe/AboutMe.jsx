@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Portfolio from "../../../Assets/zaPortfolio.png";
 import { useInView } from "react-intersection-observer";
 import classes from "./AboutMe.module.scss";
-
 function AboutMe() {
   const [use, setUse] = useState(false);
-
   //Retrigera se 4 puta samo od sebe pa mi se animacija neće dogodit ako stavi triger
   //once true zato stavljen timeout od jedne sekunde kada se stranica učita
   const { ref, inView } = useInView({
@@ -23,8 +21,8 @@ function AboutMe() {
   }, []);
 
   return (
-    <div className={classes["extended-background"]} ref={ref}>
-      <div className={classes["intro-background"]}>
+    <div className={classes["extended-background"]}>
+      <div className={classes["intro-background"]} ref={ref}>
         <div className={classes["small-container"]}>
           <motion.div
             animate={{ x: inView ? 0 : -1400 }}
@@ -52,3 +50,5 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
+/* */

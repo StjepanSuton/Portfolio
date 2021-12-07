@@ -1,4 +1,5 @@
 @import "../../scss/varibales";
+@import "../../scss/brakepoints";
 .container {
   z-index: 1;
   overflow-x: hidden;
@@ -7,4 +8,8 @@
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
+  @include media("<=tablet") {
+    width: unset;
+    height: unset;
+  }
 }

@@ -1,10 +1,14 @@
 @import "../../../scss/varibales";
+@import "../../../scss/brakepoints";
 .panel {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  @include media("<=tablet") {
+    height: 100vh;
+  }
 }
 .panel-inner {
   position: absolute;
@@ -15,6 +19,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @include media("<=tablet") {
+    min-width: 100%;
+    height: 50vh;
+  }
 }
 .title {
   color: $font-secondary;
@@ -23,6 +31,12 @@
   margin-bottom: 25vw;
   position: absolute;
   font-size: 15vw;
+  @include media("<=tablet") {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin: 0;
+    position: relative;
+  }
 }
 .line {
   top: 40vh;
@@ -32,9 +46,21 @@
   width: 100vw;
   height: 30vh;
   right: 60vw;
+  @include media("<=tablet") {
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+  }
 }
 .arrow {
   position: absolute;
   margin-top: 35vh;
   margin-left: 30vw;
+  @include media("<=tablet") {
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+  }
 }

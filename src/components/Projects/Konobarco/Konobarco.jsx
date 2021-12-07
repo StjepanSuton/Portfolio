@@ -3,9 +3,12 @@ import Konobarco1 from "../../../Assets/Konobarco.png";
 import classes from "./Konobarco.module.scss";
 import konobarcoData from "./DataKonobarco";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { useInView } from "react-intersection-observer";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function Konobarco() {
+  const matches = useMediaQuery("(max-width:1024px)");
   const [show, setShow] = useState(-1);
   const [use, setUse] = useState(false);
   const [showMore, setShowMore] = useState(false);
@@ -36,30 +39,57 @@ function Konobarco() {
     <AnimateSharedLayout>
       <div className={classes.panel} ref={ref}>
         <div className={classes["panel-inner"]}>
-          <motion.div
-            animate={{ x: showMore ? 0 : 1500, opacity: showMore ? 1 : 0 }}
-            transition={{ duration: 1 }}
-            className={classes["small-container2"]}
-          >
-            <motion.h6 className={classes.about}>About KONOBAR.CO</motion.h6>
-            <motion.p className={classes.p}>
-              KONOBAR.CO was my first ever project that I build from scratch.
-              The idea is to simply scan the Qr code with your mobile device.
-              Select the drinks you would like to order and wait for the waiter
-              to confirm your order. You can even login with your facebook or
-              google account to keep track of your commonly ordered drinks and
-              collect loyalty rewards which you can redeem later. You can try
-              the demo at:{" "}
-              <a
-                className={classes.a}
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://konobar-co.web.app/"
-              >
-                https://konobar-co.web.app/
-              </a>
-            </motion.p>
-          </motion.div>
+          {matches === true ? (
+            <motion.div
+              animate={{ y: showMore ? 0 : 500, opacity: showMore ? 1 : 0 }}
+              transition={{ duration: 1 }}
+              className={classes["small-container2"]}
+            >
+              <motion.h6 className={classes.about}>About KONOBAR.CO</motion.h6>
+              <motion.p className={classes.p}>
+                KONOBAR.CO was my first ever project that I build from scratch.
+                The idea is to simply scan the Qr code with your mobile device.
+                Select the drinks you would like to order and wait for the
+                waiter to confirm your order. You can even login with your
+                facebook or google account to keep track of your commonly
+                ordered drinks and collect loyalty rewards which you can redeem
+                later. You can try the demo at:{" "}
+                <a
+                  className={classes.a}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://konobar-co.web.app/"
+                >
+                  https://konobar-co.web.app/
+                </a>
+              </motion.p>
+            </motion.div>
+          ) : (
+            <motion.div
+              animate={{ x: showMore ? 0 : 1500, opacity: showMore ? 1 : 0 }}
+              transition={{ duration: 1 }}
+              className={classes["small-container2"]}
+            >
+              <motion.h6 className={classes.about}>About KONOBAR.CO</motion.h6>
+              <motion.p className={classes.p}>
+                KONOBAR.CO was my first ever project that I build from scratch.
+                The idea is to simply scan the Qr code with your mobile device.
+                Select the drinks you would like to order and wait for the
+                waiter to confirm your order. You can even login with your
+                facebook or google account to keep track of your commonly
+                ordered drinks and collect loyalty rewards which you can redeem
+                later. You can try the demo at:{" "}
+                <a
+                  className={classes.a}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://konobar-co.web.app/"
+                >
+                  https://konobar-co.web.app/
+                </a>
+              </motion.p>
+            </motion.div>
+          )}
           <motion.div className={classes["small-container"]}>
             <motion.h4
               animate={{ y: inView ? 0 : 100, opacity: inView ? 1 : 0 }}
@@ -92,7 +122,7 @@ function Konobarco() {
                         key={item.description}
                         className={classes.popup}
                       >
-                        {item.description}
+                        {matches === true ? "" : item.description}
                       </motion.p>
                     </AnimatePresence>
                   ) : (
@@ -118,12 +148,22 @@ function Konobarco() {
             className={classes.learnmore}
           >
             Click to learn more
-            <motion.div
-              animate={{ x: 120, opacity: [0, 1, 0] }}
-              transition={{ repeat: Infinity, duration: 3 }}
-            >
-              <ArrowForwardIcon sx={{ fontSize: 30 }} />
-            </motion.div>
+            {matches === true ? (
+              <motion.div
+                style={{ alignSelf: "center" }}
+                animate={{ y: [0, 50], opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 3 }}
+              >
+                <ArrowDownwardIcon sx={{ fontSize: 15 }} />
+              </motion.div>
+            ) : (
+              <motion.div
+                animate={{ x: 120, opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 3 }}
+              >
+                <ArrowForwardIcon sx={{ fontSize: 30 }} />
+              </motion.div>
+            )}
           </motion.h6>
           <motion.img
             onClick={() => handleShowMore()}

@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import classes from "./SpaceToursim.module.scss";
 import spaceTourismData from "./DataSpaceTourism";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import sveskupa from "../../../Assets/sveskupa2.png";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function SpaceTourism() {
+  const matches = useMediaQuery("(max-width:1024px)");
   const [show, setShow] = useState(-1);
   const [use, setUse] = useState(false);
   const [showMore, setShowMore] = useState(false);
@@ -36,32 +39,65 @@ function SpaceTourism() {
     <AnimateSharedLayout>
       <div className={classes.panel} ref={ref}>
         <div className={classes["panel-inner"]}>
-          <motion.div
-            animate={{ x: showMore ? 0 : 1500, opacity: showMore ? 1 : 0 }}
-            transition={{ duration: 1 }}
-            className={classes["small-container2"]}
-          >
-            <motion.h6 className={classes.about}>About SpaceTourism</motion.h6>
-            <motion.p className={classes.p}>
-              SpaceToursim is a project inspired by FRONTEND MENTOR. FRONTEND
-              MENTOR is a site where you can practice your front-end skills. You
-              are given a picture of the design and a short description of the
-              site's functionality, and the rest is up to you. Although not the
-              first project I did on FRONTEND MENTOR it was definitely the most
-              memorable because instead of a picture you received a design in
-              Figma and this task made me feel like a real front-end developer.
-              Want to see how the page looks in your browser, click the link
-              below:{" "}
-              <a
-                className={classes.a}
-                rel="noopener noreferrer"
-                href="https://spacetravel-frontendmentor.netlify.app/"
-                target="_blank"
-              >
-                https://spacetravel-frontendmentor.netlify.app/
-              </a>
-            </motion.p>
-          </motion.div>
+          {matches === true ? (
+            <motion.div
+              animate={{ y: showMore ? 0 : 500, opacity: showMore ? 1 : 0 }}
+              transition={{ duration: 1 }}
+              className={classes["small-container2"]}
+            >
+              <motion.h6 className={classes.about}>
+                About SpaceTourism
+              </motion.h6>
+              <motion.p className={classes.p}>
+                SpaceToursim is a project inspired by FRONTEND MENTOR. FRONTEND
+                MENTOR is a site where you can practice your front-end skills.
+                You are given a picture of the design and a short description of
+                the site's functionality, and the rest is up to you. Although
+                not the first project I did on FRONTEND MENTOR it was definitely
+                the most memorable because instead of a picture you received a
+                design in Figma and this task made me feel like a real front-end
+                developer. Want to see how the page looks in your browser, click
+                the link below:{" "}
+                <a
+                  className={classes.a}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://konobar-co.web.app/"
+                >
+                  https://konobar-co.web.app/
+                </a>
+              </motion.p>
+            </motion.div>
+          ) : (
+            <motion.div
+              animate={{ x: showMore ? 0 : 1500, opacity: showMore ? 1 : 0 }}
+              transition={{ duration: 1 }}
+              className={classes["small-container2"]}
+            >
+              <motion.h6 className={classes.about}>
+                About SpaceTourism
+              </motion.h6>
+              <motion.p className={classes.p}>
+                SpaceToursim is a project inspired by FRONTEND MENTOR. FRONTEND
+                MENTOR is a site where you can practice your front-end skills.
+                You are given a picture of the design and a short description of
+                the site's functionality, and the rest is up to you. Although
+                not the first project I did on FRONTEND MENTOR it was definitely
+                the most memorable because instead of a picture you received a
+                design in Figma and this task made me feel like a real front-end
+                developer. Want to see how the page looks in your browser, click
+                the link below:{" "}
+                <a
+                  className={classes.a}
+                  rel="noopener noreferrer"
+                  href="https://spacetravel-frontendmentor.netlify.app/"
+                  target="_blank"
+                >
+                  https://spacetravel-frontendmentor.netlify.app/
+                </a>
+              </motion.p>
+            </motion.div>
+          )}
           <motion.div className={classes["small-container"]}>
             <motion.h4
               animate={{ y: inView ? 0 : 100, opacity: inView ? 1 : 0 }}

@@ -1,11 +1,14 @@
 @import "../../../scss/varibales";
-
+@import "../../../scss/brakepoints";
 .panel {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
+  @include media("<=tablet") {
+    height: 110vh;
+  }
 }
 .panel-inner {
   position: absolute;
@@ -17,6 +20,12 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  @include media("<=tablet") {
+    position: relative;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 .small-container {
   z-index: 3;
@@ -28,6 +37,13 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  @include media("<=tablet") {
+    position: relative;
+
+    margin-right: 0;
+    margin: 5vw;
+    width: 70%;
+  }
 }
 .small-container2 {
   z-index: 4;
@@ -42,6 +58,17 @@
   align-items: flex-start;
   justify-content: space-around;
   color: $font-secondary;
+  @include media("<=tablet") {
+    position: absolute;
+    height: 50%;
+    min-width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 0;
+    top: 0;
+  }
 }
 .about {
   margin: 2vw;
@@ -58,12 +85,19 @@
   width: 80%;
   margin: 2vw;
   font-size: 2vw;
+  @include media("<=tablet") {
+    font-size: 2vh;
+    margin: 5vw;
+  }
 }
 .h4 {
   margin: 0;
   width: 100%;
   font-size: 6vw;
   color: $font-secondary;
+  @include media("<=tablet") {
+    margin: 5vw;
+  }
 }
 .ul {
   width: 100%;
@@ -75,6 +109,9 @@
   list-style-type: none;
   font-size: 2vw;
   color: $font-secondary;
+  @include media("<=tablet") {
+    font-size: 2vh;
+  }
 }
 .popup {
   width: 15%;
@@ -85,11 +122,20 @@
 }
 .img {
   width: 4.5vw;
+  @include media("<=tablet") {
+    width: 7vw;
+  }
 }
 .slika {
   z-index: 5;
   position: absolute;
   margin-left: 10vw;
+  @include media("<=tablet") {
+    margin: 0;
+    width: 30vh;
+    position: relative;
+    margin-left: 0;
+  }
 }
 .learnmore {
   position: absolute;
@@ -98,4 +144,9 @@
   margin-right: 40vw;
   font-size: 1vw;
   color: $font-secondary;
+  @include media("<=tablet") {
+    margin-right: 0;
+    position: relative;
+    font-size: 2vh;
+  }
 }

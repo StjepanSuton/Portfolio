@@ -6,6 +6,7 @@ import Welcome from "./Welcome/Welcome";
 import Konobarco from "./Konobarco/Konobarco";
 import SpaceTourism from "./SpaceTourism/SpaceTourism";
 import GetInTouch from "./GetInTouch/GetInTouch";
+
 function Projects() {
   const ref = useRef(null);
 
