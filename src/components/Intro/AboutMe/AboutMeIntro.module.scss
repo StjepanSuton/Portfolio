@@ -34,10 +34,10 @@
   position: relative;
   font-size: 14vw;
   @include media("<=tablet") {
-    font-size: 14vh;
+    font-size: 16vw;
   }
   @include media("<=phone") {
-    font-size: 10vh;
+    font-size: 16vw;
   }
 }
 .line {

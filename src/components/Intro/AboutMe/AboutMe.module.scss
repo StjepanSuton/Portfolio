@@ -56,10 +56,10 @@
   font-size: 2vw;
   max-width: 50vw;
   @include media("<=tablet") {
-    font-size: 2.3vh;
+    font-size: 2.3vw;
   }
   @include media("<=phone") {
-    font-size: 1.7vh;
+    font-size: 3.5vw;
   }
 }
 .img {
