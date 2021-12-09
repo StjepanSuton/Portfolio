@@ -23,7 +23,7 @@ function AboutMeIntro() {
     <div className={classes.panel}>
       <div className={classes["panel-inner"]} ref={ref}>
         <motion.h1
-          animate={{ y: inView ? -20 : 100, opacity: inView ? 1 : 0 }}
+          animate={{ y: inView ? 0 : 100, opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
           className={classes.title}
         >

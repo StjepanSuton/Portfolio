@@ -30,12 +30,12 @@
   margin-bottom: 30vw;
   font-size: 12vw;
   @include media("<=tablet") {
-    font-size: 10vh;
+    font-size: 15vw;
     margin-right: 0;
     margin-bottom: 0;
   }
   @include media("<=phone") {
-    font-size: 7.5vh;
+    font-size: 15vw;
   }
 }
 .line {

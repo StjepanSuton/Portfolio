@@ -39,9 +39,9 @@
   flex-direction: column;
   @include media("<=tablet") {
     position: relative;
-
+    text-align: center;
     margin-right: 0;
-    margin: 5vw;
+    margin: 0vw;
     width: 70%;
   }
 }
@@ -75,14 +75,21 @@
   font-size: 3vw;
   font-weight: bold;
   align-self: flex-start;
+  @include media("<=phone") {
+    font-size: 5vw;
+    margin: 5vw;
+  }
 }
 .p {
   width: 80%;
   margin: 2vw;
   font-size: 1.7vw;
   @include media("<=tablet") {
+    font-size: 3vw;
+    margin: 0vw;
+  }
+  @include media("<=phone") {
     font-size: 3.5vw;
-    margin: 5vw;
   }
 }
 .a {
@@ -94,9 +101,6 @@
   width: 100%;
   font-size: 6vw;
   color: $font-secondary;
-  @include media("<=tablet") {
-    margin: 5vw;
-  }
 }
 .ul {
   width: 100%;
@@ -109,7 +113,10 @@
   font-size: 2vw;
   color: $font-secondary;
   @include media("<=tablet") {
-    font-size: 2vh;
+    font-size: 3vw;
+    margin: 0;
+    margin-right: 0vw;
+    justify-content: space-between;
   }
 }
 .popup {
@@ -122,7 +129,7 @@
 .img {
   width: 4.5vw;
   @include media("<=tablet") {
-    width: 4.5vw;
+    width: 7vw;
   }
 }
 .slika {
@@ -147,6 +154,11 @@
   @include media("<=tablet") {
     margin-right: 0;
     position: relative;
-    font-size: 2vh;
+    font-size: 2.5vw;
+  }
+  @include media("<=phone") {
+    margin-right: 0;
+    position: relative;
+    font-size: 3vw;
   }
 }
