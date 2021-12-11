@@ -3,13 +3,13 @@
 .extended-background {
   padding-top: 25vh;
   width: 100vw;
-  height: 140vh;
+  height: 100vh;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
   @include media("<=tablet") {
-    height: 100vh;
+    height: 80vh;
     padding-top: 0;
   }
 }

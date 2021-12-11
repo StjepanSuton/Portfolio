@@ -165,7 +165,7 @@ function SpaceTourism() {
                 }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >
-                <ArrowDownwardIcon sx={{ fontSize: 15 }} />
+                <ArrowDownwardIcon sx={{ fontSize: 30 }} />
               </motion.div>
             ) : (
               <motion.div

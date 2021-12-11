@@ -103,7 +103,8 @@ function Konobarco() {
               transition={{ delay: 0.8, duration: 1 }}
               className={classes.ul}
             >
-              Technologies:
+              <div>Technologies:</div>
+
               {konobarcoData.map((item, i) => (
                 <motion.li
                   animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
@@ -157,7 +158,7 @@ function Konobarco() {
                 }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >
-                <ArrowDownwardIcon sx={{ fontSize: 15 }} />
+                <ArrowDownwardIcon sx={{ fontSize: 30 }} />
               </motion.div>
             ) : (
               <motion.div

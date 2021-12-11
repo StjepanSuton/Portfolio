@@ -33,8 +33,10 @@ function App() {
           {matches === true ? (
             <div>
               <Welcome />
-              <Konobarco />
-              <SpaceTourism />
+              <div style={{ backgroundColor: "brown" }}>
+                <Konobarco />
+                <SpaceTourism />
+              </div>
               <GetInTouch />
               <ContactMe />
             </div>

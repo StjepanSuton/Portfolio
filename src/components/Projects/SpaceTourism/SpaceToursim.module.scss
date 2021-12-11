@@ -7,7 +7,9 @@
   flex-direction: column;
   align-items: flex-end;
   @include media("<=tablet") {
-    height: 110vh;
+    height: 90vh;
+    padding-bottom: 5vh;
+    justify-content: space-around;
   }
 }
 .panel-inner {
@@ -25,6 +27,7 @@
     flex-direction: column;
     min-width: 100%;
     max-width: 100%;
+    height: 100%;
   }
 }
 .small-container {
@@ -42,7 +45,7 @@
     text-align: center;
     margin-right: 0;
     margin: 0vw;
-    width: 70%;
+    width: 100%;
   }
 }
 .small-container2 {
@@ -60,7 +63,7 @@
   color: $font-secondary;
   @include media("<=tablet") {
     position: absolute;
-    height: 50%;
+    height: 60%;
     min-width: 100%;
     max-width: 100%;
     align-items: center;
@@ -75,8 +78,12 @@
   font-size: 3vw;
   font-weight: bold;
   align-self: flex-start;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     font-size: 5vw;
+    margin: 5vw;
+  }
+  @include media("<=phone") {
+    font-size: 6vw;
     margin: 5vw;
   }
 }
@@ -85,7 +92,7 @@
   margin: 2vw;
   font-size: 1.7vw;
   @include media("<=tablet") {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 0vw;
   }
   @include media("<=phone") {
@@ -101,6 +108,12 @@
   width: 100%;
   font-size: 6vw;
   color: $font-secondary;
+  @include media("<=tablet") {
+    font-size: 8vw;
+  }
+  @include media("<=phone") {
+    font-size: 8vw;
+  }
 }
 .ul {
   width: 100%;
@@ -113,10 +126,10 @@
   font-size: 2vw;
   color: $font-secondary;
   @include media("<=tablet") {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 0;
     margin-right: 0vw;
-    justify-content: space-between;
+    padding: 0;
   }
 }
 .popup {
@@ -129,7 +142,7 @@
 .img {
   width: 4.5vw;
   @include media("<=tablet") {
-    width: 7vw;
+    width: 9vw;
   }
 }
 .slika {
@@ -159,6 +172,6 @@
   @include media("<=phone") {
     margin-right: 0;
     position: relative;
-    font-size: 3vw;
+    font-size: 6vw;
   }
 }
