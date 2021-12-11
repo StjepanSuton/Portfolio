@@ -12,7 +12,7 @@
 }
 .container {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -28,7 +28,7 @@
 }
 .about-contact {
   margin-left: 50vw;
-  height: 60%;
+  height: 50%;
   width: 80%;
   background-color: $bg-secondary;
   position: absolute;
@@ -39,16 +39,16 @@
   @include media("<=tablet") {
     width: 65%;
     margin-left: 35vw;
-    height: 50%;
+    height: 30%;
   }
 }
 .p {
   margin-right: 5vw;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   color: $font-secondary;
   font-size: 2vw;
   height: 100%;
@@ -56,6 +56,11 @@
   @include media("<=tablet") {
     font-size: 3.5vw;
   }
+}
+.a {
+  align-self: flex-start;
+  color: $font-secondary;
+  font-weight: bold;
 }
 .social-container {
   display: flex;

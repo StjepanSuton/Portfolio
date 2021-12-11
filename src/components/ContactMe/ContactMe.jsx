@@ -98,13 +98,12 @@ function ContactMe() {
             className={classes["about-contact"]}
           ></motion.div>
           <p className={classes.p}>
-            Want to know more about me, maybe have some questions about my
-            skills in front-end development or electrical engineering? You can
-            contact me on sutonstjepan@gmail.com or stjepan.suton@prolux.hr for
-            electrical engineering questions. You can also check out my GitHub
-            repo to see the source code for the projects mentioned in the
-            section before, as well as some other projects that are not
-            mentioned here.
+            Want to know more about me, check out my social media or my github
+            repo for this project and many others. If you have any more
+            questions you can also contact me on :
+            <a className={classes.a} href="mailto:sutonstjepan@gmail.com">
+              sutonstjepan@gmail.com
+            </a>
           </p>
         </div>
       </div>

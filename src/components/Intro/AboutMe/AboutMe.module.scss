@@ -48,6 +48,9 @@
   @include media("<=tablet") {
     height: 50vh;
   }
+  @include media("<=phone") {
+    height: 100vw;
+  }
 }
 .p {
   color: $font-secondary;
@@ -68,6 +71,7 @@
     width: 25vh;
   }
   @include media("<=phone") {
-    width: 15vh;
+    z-index: 0;
+    width: 40vw;
   }
 }

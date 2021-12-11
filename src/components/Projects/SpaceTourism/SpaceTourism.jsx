@@ -130,7 +130,7 @@ function SpaceTourism() {
                         key={item.description}
                         className={classes.popup}
                       >
-                        {item.description}
+                        {matches === true ? "" : item.description}
                       </motion.p>
                     </AnimatePresence>
                   ) : (
@@ -159,7 +159,10 @@ function SpaceTourism() {
             {matches === true ? (
               <motion.div
                 style={{ alignSelf: "center" }}
-                animate={{ y: [0, 50], opacity: [0, 1, 0] }}
+                animate={{
+                  y: [0, 50],
+                  opacity: showMore ? [0, 0, 0] : [0, 1, 0],
+                }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >
                 <ArrowDownwardIcon sx={{ fontSize: 15 }} />

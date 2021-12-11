@@ -43,7 +43,7 @@
   position: absolute;
   background-color: $bg-secondary;
   width: 80vw;
-  min-height: 25vh;
+  height: 15vh;
   margin-right: 20vw;
   @include media("<=tablet") {
     position: relative;
