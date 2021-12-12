@@ -171,6 +171,7 @@
   }
   @include media("<=phone") {
     margin-right: 0;
+    margin: 7.5vw;
     position: relative;
     font-size: 6vw;
   }
