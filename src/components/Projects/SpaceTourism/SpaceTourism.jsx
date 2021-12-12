@@ -56,7 +56,7 @@ function SpaceTourism() {
                 not the first project I did on FRONTEND MENTOR it was definitely
                 the most memorable because instead of a picture you received a
                 design in Figma and this task made me feel like a real front-end
-                developer. Want to see how the page looks in your browser, click
+                developer. Want to see how the page looks in your browser? Click
                 the link below:{" "}
                 <a
                   className={classes.a}
@@ -85,7 +85,7 @@ function SpaceTourism() {
                 not the first project I did on FRONTEND MENTOR it was definitely
                 the most memorable because instead of a picture you received a
                 design in Figma and this task made me feel like a real front-end
-                developer. Want to see how the page looks in your browser, click
+                developer. Want to see how the page looks in your browser? Click
                 the link below:{" "}
                 <a
                   className={classes.a}
@@ -161,7 +161,7 @@ function SpaceTourism() {
                 style={{ alignSelf: "center" }}
                 animate={{
                   y: [0, 50],
-                  opacity: showMore ? [0, 0, 0] : [0, 1, 0],
+                  opacity: [0, 1, 0],
                 }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >

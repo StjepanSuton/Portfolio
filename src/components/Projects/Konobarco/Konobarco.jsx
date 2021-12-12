@@ -154,7 +154,7 @@ function Konobarco() {
                 style={{ alignSelf: "center" }}
                 animate={{
                   y: [0, 50],
-                  opacity: showMore ? [0, 0, 0] : [0, 1, 0],
+                  opacity: [0, 1, 0],
                 }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >
