@@ -41,7 +41,7 @@ function Konobarco() {
         <div className={classes["panel-inner"]}>
           {matches === true ? (
             <motion.div
-              animate={{ y: showMore ? 0 : 500, opacity: showMore ? 1 : 0 }}
+              animate={{ y: showMore ? 0 : 300, opacity: showMore ? 1 : 0 }}
               transition={{ duration: 1 }}
               className={classes["small-container2"]}
             >
