@@ -21,9 +21,8 @@ function Projects() {
       scrollTrigger: {
         trigger: ref.current,
         pin: true,
-        scrub: 0.8, //kolko vrimena da se pina od jedne do druge
+        scrub: 0.6, //kolko vrimena da se pina od jedne do druge
         snap: 1 / (sections.length - 1),
-        // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=8000", //kolko je dugo scroll šta veći broj više ima za scrollat
       },
     });

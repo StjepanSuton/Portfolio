@@ -10,8 +10,7 @@ import GetInTouch from "./components/Projects/GetInTouch/GetInTouch";
 import ContactMe from "./components/ContactMe/ContactMe";
 function App() {
   const matches = useMediaQuery("(max-width:1024px)");
-  //Dva preloadera jer ima problem sa SmoothScrollom i gsapom
-  //Is interescting treba popravit sa x varijablom
+  //Dva preloadera jer ima problem s gsapom
   const [preloader1, setPreloader1] = useState(true);
   const [preloader2, setPreloader2] = useState(true);
   useEffect(() => {
@@ -53,11 +52,3 @@ function App() {
 }
 
 export default App;
-/*    {preloader2 ? (
-        ""
-      ) : (
-        <div>
-          <Projects />
-        </div>
-      )} 
-        {preloader2 ? "" : <ContactMe />}*/

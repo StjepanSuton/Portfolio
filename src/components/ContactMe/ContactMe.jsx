@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 function ContactMe() {
   const [use, setUse] = useState(false);
-
   //Retrigera se 4 puta samo od sebe pa mi se animacija neće dogodit ako stavi triger
   //once true zato stavljen timeout od jedne sekunde kada se stranica učita
   const { ref, inView } = useInView({
@@ -65,7 +64,7 @@ function ContactMe() {
               transition={{ duration: 1.5, delay: 2 }}
             >
               <a
-                href="https://github.com/zgodni"
+                href="https://github.com/StjepanSuton"
                 rel="noopener noreferrer"
                 target="_blank"
               >

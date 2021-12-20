@@ -18,7 +18,7 @@ function Intro() {
           style={{ translateY: y }}
           className={classes.letter1}
         >
-          STJEPAN'S
+          STJEPANS
         </motion.h1>
         <div className={classes.line1}></div>
       </div>
@@ -42,4 +42,3 @@ function Intro() {
 }
 
 export default Intro;
-/*    */
