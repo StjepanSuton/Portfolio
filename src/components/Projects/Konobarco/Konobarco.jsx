@@ -76,7 +76,7 @@ function Konobarco() {
                 The idea is to simply scan the Qr code with your mobile device.
                 Select the drinks you would like to order and wait for the
                 waiter to confirm your order. You can even login with your
-                facebook or google account to keep track of your commonly
+                Facebook or Google account to keep track of your commonly
                 ordered drinks and collect loyalty rewards which you can redeem
                 later. You can try the demo at:{" "}
                 <a

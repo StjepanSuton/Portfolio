@@ -49,11 +49,11 @@ function SpaceTourism() {
                 About SpaceTourism
               </motion.h6>
               <motion.p className={classes.p}>
-                SpaceToursim is a project inspired by Frontend mentor. Frontend
-                mentor is a site where you can practice your front-end skills.
+                SpaceToursim is a project inspired by FRONTEND MENTOR. FRONTEND
+                MENTOR is a site where you can practice your front-end skills.
                 You are given a picture of the design and a short description of
                 the site's functionality, and the rest is up to you. Although
-                not the first project I did on Frontend mentor it was definitely
+                not the first project I did on FRONTEND MENTOR it was definitely
                 the most memorable because instead of a picture you received a
                 design in Figma and this task made me feel like a real front-end
                 developer. Want to see how the page looks in your browser? Click
