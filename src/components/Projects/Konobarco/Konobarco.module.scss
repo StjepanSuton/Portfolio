@@ -47,6 +47,10 @@
     margin-right: 0;
     margin: 0vw;
     width: 90%;
+    height: 400px;
+  }
+  @include media("<=phone") {
+    height: 200px;
   }
 }
 .small-container2 {
@@ -153,7 +157,7 @@
   margin-left: 10vw;
   @include media("<=tablet") {
     margin: 0;
-    width: 30vh;
+    width: 25vh;
     position: relative;
     margin-left: 0;
   }

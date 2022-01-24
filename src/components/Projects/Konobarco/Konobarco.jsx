@@ -53,7 +53,7 @@ function Konobarco() {
                 waiter to confirm your order. You can even login with your
                 Facebook or Google account to keep track of your commonly
                 ordered drinks and collect loyalty rewards which you can redeem
-                later. You can try the demo at:{" "}
+                later. You can try the demo at:<br />
                 <a
                   className={classes.a}
                   rel="noopener noreferrer"
@@ -78,7 +78,7 @@ function Konobarco() {
                 waiter to confirm your order. You can even login with your
                 Facebook or Google account to keep track of your commonly
                 ordered drinks and collect loyalty rewards which you can redeem
-                later. You can try the demo at:{" "}
+                later. You can try the demo at:<br />
                 <a
                   className={classes.a}
                   rel="noopener noreferrer"

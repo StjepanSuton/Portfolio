@@ -57,7 +57,8 @@ function SpaceTourism() {
                 the most memorable because instead of a picture you received a
                 design in Figma and this task made me feel like a real front-end
                 developer. Want to see how the page looks in your browser? Click
-                the link below:{" "}
+                the link below:
+                <br />
                 <a
                   className={classes.a}
                   rel="noopener noreferrer"
@@ -86,7 +87,8 @@ function SpaceTourism() {
                 the most memorable because instead of a picture you received a
                 design in Figma and this task made me feel like a real front-end
                 developer. Want to see how the page looks in your browser? Click
-                the link below:{" "}
+                the link below:
+                <br />
                 <a
                   className={classes.a}
                   rel="noopener noreferrer"

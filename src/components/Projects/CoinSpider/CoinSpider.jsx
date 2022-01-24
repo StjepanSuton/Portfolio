@@ -48,12 +48,12 @@ function CoinSpider() {
             >
               <motion.h6 className={classes.about}>About CoinSpider</motion.h6>
               <motion.p className={classes.p}>
-                After tackeling typescript I was looking for, a project to hone
-                my new skills, and with the growing craze for cryptocurencies
+                After tackling typescript I was looking for, a project to hone
+                my new skills, and with the growing craze for cryptocurrencies
                 building my own crypto site seemed like a fun project. Using
                 CoinSpider you can build and track your own portfolio, see the
                 history and statistics of over twelve thousand coins and over
-                five hundred exchanges and set up your own watchlist for your
+                five hundred exchanges and set up your own watch list for your
                 favourite coins. To see the site in action visit :<br />
                 <a
                   className={classes.a}
@@ -73,12 +73,12 @@ function CoinSpider() {
             >
               <motion.h6 className={classes.about}>About CoinSpider</motion.h6>
               <motion.p className={classes.p}>
-                After tackeling typescript I was looking for, a project to hone
-                my new skills, and with the growing craze for cryptocurencies
+                After tackling typescript I was looking for, a project to hone
+                my new skills, and with the growing craze for cryptocurrencies
                 building my own crypto site seemed like a fun project. Using
                 CoinSpider you can build and track your own portfolio, see the
                 history and statistics of over twelve thousand coins and over
-                five hundred exchanges and set up your own watchlist for your
+                five hundred exchanges and set up your own watch list for your
                 favourite coins. To see the site in action visit :<br />
                 <a
                   className={classes.a}
