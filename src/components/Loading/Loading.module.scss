@@ -11,12 +11,12 @@
   justify-content: space-around;
   stroke: $font-primary;
   fill: transparent;
-  color: $bg-primary;
 }
 
 .svg {
   stroke: $font-primary;
   stroke-width: 3;
+  stroke: #e3b8ae;
   width: 500px;
   height: 500px;
   @include media("<=tablet") {

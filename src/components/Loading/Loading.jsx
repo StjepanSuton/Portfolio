@@ -18,7 +18,7 @@ function Loading() {
     },
     visible: {
       opacity: 1,
-      fill: "#000000",
+      fill: "#e3b8ae",
       pathLength: 1,
       transition: {
         duration: 3,
