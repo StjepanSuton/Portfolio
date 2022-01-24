@@ -6,6 +6,7 @@ import Welcome from "./Welcome/Welcome";
 import Konobarco from "./Konobarco/Konobarco";
 import SpaceTourism from "./SpaceTourism/SpaceTourism";
 import GetInTouch from "./GetInTouch/GetInTouch";
+import CoinSpider from "./CoinSpider/CoinSpider";
 
 function Projects() {
   const ref = useRef(null);
@@ -13,7 +14,6 @@ function Projects() {
   //Horizontal scroll implememntacija
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     let sections = gsap.utils.toArray(ref.current.children);
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
@@ -31,8 +31,10 @@ function Projects() {
   return (
     <div className="container" ref={ref}>
       <Welcome />
+      <CoinSpider />
       <Konobarco />
       <SpaceTourism />
+
       <GetInTouch />
     </div>
   );

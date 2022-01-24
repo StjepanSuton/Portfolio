@@ -34,8 +34,8 @@
 .small-container {
   z-index: 3;
   position: absolute;
-  margin-right: 80vw;
-  width: 35%;
+  margin-right: 85vw;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -46,21 +46,21 @@
     text-align: center;
     margin-right: 0;
     margin: 0vw;
-    width: 100%;
+    width: 90%;
   }
 }
 .small-container2 {
   z-index: 4;
   height: 100%;
   background-color: $bg-secondary;
-  margin-right: 70vw;
+  margin-right: 62vw;
   min-width: 50%;
   max-width: 50%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   color: $font-secondary;
   @include media("<=tablet") {
     position: absolute;
@@ -75,8 +75,9 @@
   }
 }
 .about {
-  margin: 2vw;
-  font-size: 3vw;
+  margin: 0vw;
+  font-size: 2vw;
+  padding-bottom: 2vw;
   font-weight: bold;
   align-self: flex-start;
   @include media("<=tablet") {
@@ -94,8 +95,8 @@
 }
 .p {
   width: 80%;
-  margin: 2vw;
-  font-size: 2vw;
+  margin: 0vw;
+  font-size: 1.5vw;
   @include media("<=tablet") {
     font-size: 3vw;
     margin: 0vw;

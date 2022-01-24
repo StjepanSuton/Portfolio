@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: flex-end;
   @include media("<=tablet") {
-    height: 90vh;
+    height: 80vh;
     padding-bottom: 5vh;
     padding-top: 5vh;
     justify-content: space-around;
@@ -45,6 +45,7 @@
     position: relative;
     text-align: center;
     margin-right: 0;
+    height: 30%;
     margin: 0vw;
     width: 90%;
   }
@@ -80,6 +81,7 @@
   font-size: 2vw;
   font-weight: bold;
   align-self: flex-start;
+
   @include media("<=tablet") {
     font-size: 5vw;
     margin: 5vw;
@@ -94,11 +96,11 @@
   margin: 0vw;
   font-size: 1.5vw;
   @include media("<=tablet") {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin: 0vw;
   }
   @include media("<=phone") {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 }
 .a {
@@ -147,23 +149,53 @@
     width: 9vw;
   }
 }
-.slika {
-  z-index: 5;
+
+.slika-container {
   position: absolute;
-  margin-left: 0vw;
-  width: 40vw;
+  margin-right: 35vw;
+  margin-bottom: 25vw;
+  z-index: 4;
   @include media("<=tablet") {
     margin: 0;
     width: 40vh;
     position: relative;
     margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .slika {
+    z-index: 4;
+    position: absolute;
+    margin-left: 0vw;
+    width: 40vw;
+    @include media("<=tablet") {
+      margin: 0;
+      width: 40vh;
+      position: relative;
+      margin-left: 0;
+    }
+  }
+  .slika2 {
+    z-index: 5;
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: -2vw;
+    width: 13vw;
+    @include media("<=tablet") {
+      right: 2vw;
+      width: 15vh;
+      position: absolute;
+      margin-left: 0;
+      margin-top: -8vw;
+    }
   }
 }
+
 .learnmore {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-right: 55vw;
+  margin-right: 50vw;
   font-size: 1vw;
   color: $font-secondary;
   @include media("<=tablet") {
