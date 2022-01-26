@@ -63,9 +63,9 @@ function SpaceTourism() {
                   className={classes.a}
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://konobar-co.web.app/"
+                  href="https://spacetravel-frontendmentor.netlify.app/"
                 >
-                  https://konobar-co.web.app/
+                  https://spacetravel-frontendmentor.netlify.app/
                 </a>
               </motion.p>
             </motion.div>
