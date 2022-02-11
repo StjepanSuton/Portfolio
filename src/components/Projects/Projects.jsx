@@ -7,6 +7,7 @@ import Konobarco from "./Konobarco/Konobarco";
 import SpaceTourism from "./SpaceTourism/SpaceTourism";
 import GetInTouch from "./GetInTouch/GetInTouch";
 import CoinSpider from "./CoinSpider/CoinSpider";
+import WebShop from "./WebShop/WebShop";
 
 function Projects() {
   const ref = useRef(null);
@@ -32,6 +33,7 @@ function Projects() {
     <div className="container" ref={ref}>
       <Welcome />
       <CoinSpider />
+      <WebShop/>
       <Konobarco />
       <SpaceTourism />
 

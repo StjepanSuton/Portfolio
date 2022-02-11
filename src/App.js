@@ -9,6 +9,7 @@ import SpaceTourism from "./components/Projects/SpaceTourism/SpaceTourism";
 import GetInTouch from "./components/Projects/GetInTouch/GetInTouch";
 import ContactMe from "./components/ContactMe/ContactMe";
 import CoinSpider from "./components/Projects/CoinSpider/CoinSpider";
+import WebShop from "./components/Projects/WebShop/WebShop";
 function App() {
   const matches = useMediaQuery("(max-width:1024px)");
   //Dva preloadera jer ima problem s gsapom
@@ -35,6 +36,7 @@ function App() {
               <Welcome />
               <div style={{ backgroundColor: "brown" }}>
                 <CoinSpider />
+                <WebShop />
                 <Konobarco />
                 <SpaceTourism />
               </div>
