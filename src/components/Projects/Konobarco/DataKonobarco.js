@@ -11,7 +11,7 @@ const konobarcoData = [
   {
     title: "redux",
     img: redux,
-    description: "React state-managment tool",
+    description: "React state managment tool",
   },
   {
     title: "materialUI",
