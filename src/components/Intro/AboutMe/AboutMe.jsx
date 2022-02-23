@@ -31,9 +31,9 @@ function AboutMe() {
           ></motion.div>
           <p className={classes.p}>
             Hello! My name is Stjepan Suton and I am an electrical engineer with
-            a passion for programing. I graduated with a master's degree in
+            a passion for programming. I graduated with a master's degree in
             electrical engineering in 2018 and have been working in the industry
-            ever since. In early 2021 I took up programing as a hobby and am
+            ever since. In early 2021 I took up programming as a hobby and am
             currently trying to get a foot in the industry. In my spare time I
             like to play board games like chess and Catan, train boxing, and
             play football with my friends.
